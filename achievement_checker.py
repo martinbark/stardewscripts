@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 """ achievement_checker.py:
 	Check a Stardew Valley save file for progress towards achievements.

@@ -51,13 +51,13 @@ def main():
 		items = location.find('objects').findall('item')
 		for item in items:
 			obj = item.find('value').find('Object')
-			if obj.find('Name').text == 'Artifact Spot':
+			if obj.find('name').text == 'Artifact Spot':
 				name = location.find('name').text
-				print(name)
+				# print(name)
 				# You could print this out instead of you want the actual X,Y coordinates:
-				# x = obj.find('tileLocation').find('X').text
-				# y = obj.find('tileLocation').find('Y').text
-				# print(name + ': (' + x + ', '  + y + ')')
+				x = obj.find('tileLocation').find('X').text
+				y = obj.find('tileLocation').find('Y').text
+				print(name + ': (' + x + ', '  + y + ')')
 
 if __name__ == "__main__":
 	main()
